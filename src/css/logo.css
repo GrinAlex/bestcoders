@@ -1,0 +1,20 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  outline: none;
+}
+
+.logo__accent {
+  color: var(--color-green);
+}
+
+.nav__logo{
+  color: var(--color-black);
+}
+
+.footer__logo{
+  color: var(--color-white);
+}
