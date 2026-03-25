@@ -12,17 +12,126 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin src="/bestcoders/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/bestcoders/assets/index-BFRxpnfH.css">
+    <link rel="stylesheet" crossorigin href="/bestcoders/assets/index-myQVPsl6.css">
   </head>
   <body>
-    <header>
+    <header class="header">
   <div class="container">
+    <nav class="header__nav nav">
+      <a class="logo nav__logo" href="../index.html" aria-label="Site logo">
+        english<span class="logo__accent">excellence</span>.
+      </a>
 
-    <H2>Header</H2>
-    
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#lessons" class="nav__link">Our lessons</a>
+        </li>
+        <li class="nav__item">
+          <a href="#teachers" class="nav__link">Teachers</a>
+        </li>
+        <li class="nav__item">
+          <a href="#reviews" class="nav__link">Reviews</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact us</a>
+        </li>
+      </ul>
+
+      <ul class="socials nav__socials">
+        <li class="socials__item">
+          <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer" class="socials__link">
+            <svg width="28" height="28" class="socials__icon">
+              <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer" class="socials__link">
+            <svg width="28" height="28" class="socials__icon">
+              <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer" class="socials__link">
+            <svg width="28" height="28" class="socials__icon">
+              <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button class="menu-toggle" type="button" data-menu-open>
+        <svg class="menu-toggle__icon">
+          <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-nav"></use>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="backdrop" data-backdrop>
+      <div class="mobile-menu">
+        <button class="mobile-menu__close" type="button" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+            <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu__content">
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="#about" class="mobile-nav__link">About us</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="#lessons" class="mobile-nav__link">Our lessons</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="#teachers" class="mobile-nav__link">Teachers</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="#reviews" class="mobile-nav__link">Reviews</a>
+            </li>
+
+            <li class="mobile-nav__item">
+              <a href="#contact" class="mobile-nav__link">Contact us</a>
+            </li>
+          </ul>
+
+          <ul class="socials mobile-menu__socials">
+            <li class="socials__item">
+              <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light">
+                <svg width="28" height="28" class="socials__icon socials__icon--light">
+                  <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light">
+                <svg width="28" height="28" class="socials__icon socials__icon--light">
+                  <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light">
+                <svg width="28" height="28" class="socials__icon socials__icon--light">
+                  <use href="/bestcoders/assets/sprite-dwD-bPNk.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
-
 
     <main>
       <!-- Loads the specified .html file -->
