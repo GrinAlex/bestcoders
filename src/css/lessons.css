@@ -124,6 +124,16 @@
 @media only screen and (min-width: 768px) {
   .lessons-item-price {
     line-height: 1.34;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lessons-item-price {
+    line-height: 1.34;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.35;
   }
 }
 
