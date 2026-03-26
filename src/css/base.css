@@ -10,6 +10,7 @@
   --color-black: #121417;
   --color-black-transparent: rgba(18, 20, 23, 0.5);
   --color-green: #4dc274;
+  --color-green-hover: #38ae5f;
   --color-linear: gradient(80deg, #4dc274 0%, #bee8cc 100%);
   --color-light_green: #d4fde1;
   --color-gray: #f3f5f6;
@@ -104,15 +105,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 295px;
+  width: 100%;
   height: 52px;
   border-radius: 12px;
-  font-family: Manrope;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0%;
-  margin: 20px;
   background-color: var(--color-green);
   color: var(--color-white);
   transition: var(--transition-base);
@@ -121,7 +120,6 @@ main {
 
 @media only screen and (min-width: 768px) {
   .primary-button {
-    max-width: 306px;
     font-size: 18px;
     line-height: 1.56;
     height: 60px;
@@ -130,7 +128,7 @@ main {
 
 .primary-button:hover,
 .primary-button:focus {
-  background-color: #38ae5f;
+  background-color: var(--color-green-hover);
 }
 
 .inverse-button {
