@@ -22,38 +22,10 @@
   margin-bottom: 40px;
 }
 
-.our-lessons-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.13;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--color-black);
-  position: relative;
-}
-
 @media only screen and (min-width: 768px) {
-  .our-lessons-title {
-    font-size: 40px;
-    line-height: 1.2;
+  .our-lessons-top {
+    margin-bottom: 64px;
   }
-}
-
-.our-lessons-title-part {
-  position: relative;
-}
-
-.our-lessons-title-part::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  border-radius: 8px;
-  width: 100%;
-  height: 12px;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: #bee8cc;
 }
 
 .our-lessons-text {
@@ -92,8 +64,10 @@
 }
 
 .our-lessons-item {
-  position: relative;
-  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  max-width: 336px;
   height: 400px;
   padding: 40px 20px;
   border: 1px solid var(--color-green);
@@ -102,14 +76,17 @@
 
 @media only screen and (min-width: 768px) {
   .our-lessons-item {
+    flex-basis: calc((100% - 32px) / 2);
     padding: 32px 16px;
     max-width: 336px;
     height: 404px;
+    border-radius: 30px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .our-lessons-item {
+    flex-basis: calc((100% - 32px * 2) / 2);
     padding: 32px 32px;
     max-width: 320px;
   }
@@ -117,6 +94,7 @@
 
 .our-lessons-item:nth-child(2n) {
   background-color: var(--color-green);
+  border: none;
 }
 
 .lessons-item-title {
@@ -130,12 +108,6 @@
 }
 
 .lessons-item-title-inverse {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-align: center;
-  margin-bottom: 16px;
   color: var(--color-white);
 }
 
@@ -149,13 +121,13 @@
   color: var(--color-black);
 }
 
+@media only screen and (min-width: 768px) {
+  .lessons-item-price {
+    line-height: 1.34;
+  }
+}
+
 .lessons-item-price-inverse {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.375;
-  letter-spacing: -0.02em;
-  text-align: center;
-  margin-bottom: 40px;
   color: var(--color-white);
 }
 
@@ -164,106 +136,21 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  margin-bottom: 20px;
   color: var(--color-black-transparent);
 }
 
+@media only screen and (min-width: 768px) {
+  .lessons-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 .lessons-item-text-inverse {
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  margin-bottom: 20px;
   color: var(--color-white-transparent);
 }
 
 .our-lessons-item-link {
-  display: block;
-  position: absolute;
-  bottom: 40px;
-  border-radius: 12px;
-  padding: 14px 78px;
-  width: 295px;
-  height: 52px;
-  margin-bottom: auto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--color-white);
-  background-color: var(--color-green);
-}
-
-@media only screen and (min-width: 768px) {
-  .our-lessons-item-link {
-    padding: 16px 63px;
-    bottom: 32px;
-    width: 304px;
-    height: 60px;
-    font-size: 18px;
-    line-height: 1.56;
-    transition: background-color var(--transition-base);
-  }
-
-  .our-lessons-item-link:hover,
-  .our-lessons-item-link:focus {
-    background-color: var(--color-green-hover);
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .our-lessons-item-link {
-    text-align: center;
-    padding: 16px 39px;
-    width: 256px;
-  }
-
-}
-
-
-.our-lessons-item-link-inverse {
-  display: block;
-  position: absolute;
-  bottom: 40px;
-  border-radius: 12px;
-  padding: 14px 0;
-  text-align: center;
-  width: 295px;
-  height: 52px;
-  margin-bottom: auto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #fff;
-  background-color: var(--color-green);
-  border: 1px solid var(--color-white-transparent-border);
-}
-
-@media only screen and (min-width: 768px) {
-  .our-lessons-item-link-inverse {
-    padding: 16px 62px;
-    bottom: 32px;
-    width: 304px;
-    height: 60px;
-    font-size: 18px;
-    line-height: 1.56;
-    transition: var(--transition-base);
-    transition-property: color background-color;
-  }
-
-  .our-lessons-item-link-inverse:hover,
-  .our-lessons-item-link-inverse:focus {
-    color: var(--color-green);
-    background-color: var(--color-white);
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .our-lessons-item-link-inverse {
-    text-align: center;
-    padding: 16px 38px;
-    width: 256px;
-  }
-}
-
-.inverse-colors {
-  background-color: var(--color-green);
+  margin-top: auto;
+  flex-shrink: 0;
 }
