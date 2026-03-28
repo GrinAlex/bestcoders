@@ -53,10 +53,6 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-  .teachers {
-    padding: 100px 0;
-  }
-
   .teachers-text {
     margin-bottom: 64px;
     font-size: 18px;
@@ -78,10 +74,6 @@
 
 /* desktop */
 @media only screen and (min-width: 1280px) {
-  .teachers {
-    padding: 150px 0;
-  }
-
   .teachers-list {
     flex-wrap: nowrap;
     gap: 32px;
