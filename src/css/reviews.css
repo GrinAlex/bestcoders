@@ -36,6 +36,12 @@
 /* #endregion */
 
 /* #region Reviews list */
+
+.reviews-content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .reviews-list {
   display: flex;
   flex-direction: column;
